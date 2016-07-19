@@ -1,0 +1,111 @@
+{
+  "name": "Digdag",
+  "scopeName": "source.dig",
+  "fileTypes": [
+    "dig"
+  ],
+  "keyEquivalent": "^~D",
+  "uuid": "1F43BBAE-AE46-436D-AE42-11B9837508B2",
+  "repository": {
+    "javascript": {
+      "begin": "\\$\\{",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.variable.begin.dig"
+        }
+      },
+      "end": "\\}",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.variable.end.dig"
+        }
+      },
+      "name": "variable.parameter.dig"
+    },
+    "escaped_char": {
+      "match": "\\\\.",
+      "name": "constant.character.escape.dig"
+    }
+  },
+  "patterns": [
+    {
+      "begin": "#",
+      "end": "\\n",
+      "name": "comment.line.sign.dig"
+    },
+    {
+      "match": "\\+[-\\w]+\\s*:",
+      "name": "entity.name.function.dig"
+    },
+    {
+      "match": "(timezone|schedule|sla|time|duration|alert|fail)\\s*:",
+      "name": "keyword.other.dig"
+    },
+    {
+      "include": "#javascript"
+    },
+    {
+      "match": "!include \\s*:",
+      "name": "entity.name.filename.find-in-files.dig"
+    },
+    {
+      "match": "_(export|parallel|background|error|do|retry|check|type|command)\\s*:",
+      "name": "support.type.dig"
+    },
+    {
+      "begin": "\"",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.begin.dig"
+        }
+      },
+      "end": "\"",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.end.dig"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#javascript"
+        },
+        {
+          "include": "#escaped_char"
+        }
+      ],
+      "name": "string.quoted.double.dig"
+    },
+    {
+      "begin": "'",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.begin.dig"
+        }
+      },
+      "end": "'",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.end.dig"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#escaped_char"
+        }
+      ],
+      "name": "string.quoted.single.dig"
+    },
+    {
+      "match": "\\w+>\\s*:",
+      "name": "support.class.dig"
+    },
+    {
+      "match": "\\w+\\s*:\\s+",
+      "name": "entity.other.attribute-name.dig"
+    },
+    {
+      "match": "\\b(true|false)\\b",
+      "name": "constant.language.boolean.dig"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+    "name": "vscode-digdag",
+    "displayName": "vscode-digdag",
+    "description": "Digdag support for VSCode",
+    "version": "0.0.1",
+    "publisher": "msysyamamoto",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "dig",
+            "aliases": ["Digdag", "dig"],
+            "extensions": [".dig"],
+            "configuration": "./dig.configuration.json"
+        }],
+        "grammars": [{
+            "language": "dig",
+            "scopeName": "source.dig",
+            "path": "./syntaxes/digdag.json"
+        }]
+    }
+}
