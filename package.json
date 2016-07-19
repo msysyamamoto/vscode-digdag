@@ -4,6 +4,13 @@
     "description": "Digdag support for VSCode",
     "version": "0.0.1",
     "publisher": "msysyamamoto",
+    "license": "SEE LICENSE IN LICENSE",
+    "keywords": ["Digdag"],
+    "homepage": "https://github.com/msysyamamoto/vscode-digdag/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/msysyamamoto/vscode-digdag"
+    },
     "engines": {
         "vscode": "^1.0.0"
     },
