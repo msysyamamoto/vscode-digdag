@@ -6,6 +6,8 @@ This extension adds [Digdag](http://www.digdag.io/) support.
 
 Syntax highlight
 
+![screen shot](https://raw.githubusercontent.com/msysyamamoto/vscode-digdag/master/screenshot.png)
+
 ## License
 
 [MIT](https://github.com/msysyamamoto/vscode-digdag/blob/master/LICENSE)
