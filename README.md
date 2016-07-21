@@ -1,4 +1,4 @@
-# Digdag Support for Visual Studio Code (vscode-digdag)
+# Digdag Support for Visual Studio Code
 
 This extension adds [Digdag](http://www.digdag.io/) support.
 
@@ -11,4 +11,3 @@ Syntax highlight
 ## License
 
 [MIT](https://github.com/msysyamamoto/vscode-digdag/blob/master/LICENSE)
-
