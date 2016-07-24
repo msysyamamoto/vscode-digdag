@@ -2,10 +2,12 @@
     "name": "vscode-digdag",
     "displayName": "vscode-digdag",
     "description": "Digdag support for VSCode",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "msysyamamoto",
     "license": "SEE LICENSE IN LICENSE",
-    "keywords": ["Digdag"],
+    "keywords": [
+        "Digdag"
+    ],
     "homepage": "https://github.com/msysyamamoto/vscode-digdag/blob/master/README.md",
     "repository": {
         "type": "git",
@@ -18,16 +20,25 @@
         "Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "dig",
-            "aliases": ["Digdag", "dig"],
-            "extensions": [".dig"],
-            "configuration": "./dig.configuration.json"
-        }],
-        "grammars": [{
-            "language": "dig",
-            "scopeName": "source.dig",
-            "path": "./syntaxes/digdag.json"
-        }]
+        "languages": [
+            {
+                "id": "dig",
+                "aliases": [
+                    "Digdag",
+                    "dig"
+                ],
+                "extensions": [
+                    ".dig"
+                ],
+                "configuration": "./dig.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "dig",
+                "scopeName": "source.dig",
+                "path": "./syntaxes/digdag.json"
+            }
+        ]
     }
 }
