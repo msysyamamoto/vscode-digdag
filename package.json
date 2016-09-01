@@ -40,5 +40,18 @@
                 "path": "./syntaxes/digdag.json"
             }
         ]
-    }
+    },
+    "main": "./out/src/extension",
+    "scripts": {
+        "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+        "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^1.8.5",
+        "vscode": "^0.11.0"
+    },
+	"activationEvents": [
+		"onLanguage:elixir"
+	]
 }
