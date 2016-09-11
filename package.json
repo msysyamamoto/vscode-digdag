@@ -22,10 +22,10 @@
     "contributes": {
         "languages": [
             {
-                "id": "dig",
+                "id": "digdag",
                 "aliases": [
                     "Digdag",
-                    "dig"
+                    "digdag"
                 ],
                 "extensions": [
                     ".dig"
@@ -35,7 +35,7 @@
         ],
         "grammars": [
             {
-                "language": "dig",
+                "language": "digdag",
                 "scopeName": "source.dig",
                 "path": "./syntaxes/digdag.json"
             }
@@ -52,6 +52,6 @@
         "vscode": "^0.11.0"
     },
 	"activationEvents": [
-		"onLanguage:elixir"
+		"onLanguage:digdag"
 	]
 }
