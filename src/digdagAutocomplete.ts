@@ -5,22 +5,22 @@ import {CompletionItemProvider, CompletionItem, CompletionItemKind, Cancellation
 export class DigdagAutocomplete implements CompletionItemProvider {
 
 	private keywords = [
-        "!include :",
-        "_background:",
-        "_check:",
-        "_command:",
-        "_do:",
-        "_error:",
-        "_export:",
-        "_parallel:",
-        "_retry:",
-        "_type:",
-        "alert:",
-        "duration:",
-        "fail:",
-        "schedule:",
-        "sla:",
-        "time:"
+		"!include :",
+		"_background:",
+		"_check:",
+		"_command:",
+		"_do:",
+		"_error:",
+		"_export:",
+		"_parallel:",
+		"_retry:",
+		"_type:",
+		"alert:",
+		"duration:",
+		"fail:",
+		"schedule:",
+		"sla:",
+		"time:",
 	];
 
 	private variables = [
