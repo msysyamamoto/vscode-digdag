@@ -44,6 +44,12 @@ export class DigdagAutocomplete implements CompletionItemProvider {
 		"next_session_local_time",
 		"next_session_tz_offset",
 		"next_session_unixtime",
+		"last_executed_session_time",
+		"last_executed_session_date",
+		"last_executed_session_date_compact",
+		"last_executed_session_local_time",
+		"last_executed_session_tz_offset",
+		"last_executed_session_unixtime",
 	]
 
     provideCompletionItems(document: TextDocument, position: Position, token: CancellationToken): Promise<CompletionItem[]> {
