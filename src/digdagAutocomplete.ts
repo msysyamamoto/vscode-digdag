@@ -26,6 +26,7 @@ export class DigdagAutocomplete implements CompletionItemProvider {
 	private variables = [
 		"timezone",
 		"session_uuid",
+		"session_id",
 		"session_time",
 		"session_date",
 		"session_date_compact",
