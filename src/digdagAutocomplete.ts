@@ -1,6 +1,6 @@
 'use strict';
 
-import {CompletionItemProvider, CompletionItem, CompletionItemKind, CancellationToken, TextDocument, Position, Range} from 'vscode';
+import {CompletionItemProvider, CompletionItem, CompletionItemKind, CancellationToken, TextDocument, Position} from 'vscode';
 
 export class DigdagAutocomplete implements CompletionItemProvider {
 
