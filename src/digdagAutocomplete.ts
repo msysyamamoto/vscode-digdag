@@ -105,7 +105,7 @@ export class DigdagAutocomplete implements CompletionItemProvider {
 		return Promise.resolve(result);
 	}
 
-	makeProposals(prefix: string, labels:string[], kind:CompletionItemKind): CompletionItem[] {
+	makeProposals(prefix: string, labels: string[], kind: CompletionItemKind): CompletionItem[] {
 		const prefixLength = prefix.length
 		return labels.filter((label) => {
 			return prefixLength === 0
