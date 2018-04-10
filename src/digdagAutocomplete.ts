@@ -106,9 +106,10 @@ export class DigdagAutocomplete implements CompletionItemProvider {
 	}
 
 	makeProposals(prefix: string, labels:string[], kind:CompletionItemKind): CompletionItem[] {
+		var prefixLength = prefix.length
 		return labels.filter((label) => {
-			return prefix.length === 0
-				|| (label.length >= prefix.length && label.substr(0, prefix.length) === prefix);
+			return prefixLength === 0
+				|| (label.length >= prefixLength && label.substr(0, prefixLength) === prefix);
 		}).map((label) => {
 			var item = new CompletionItem(label);
 			item.kind = kind;
