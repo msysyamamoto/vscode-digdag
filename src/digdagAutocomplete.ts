@@ -97,21 +97,21 @@ export class DigdagAutocomplete implements CompletionItemProvider {
 
     provideCompletionItems(document: TextDocument, position: Position, token: CancellationToken): Promise<CompletionItem[]> {
 
-		var range = document.getWordRangeAtPosition(position);
-		var prefix = range ? document.getText(range) : '';
-		var result = this.makeProposals(prefix, this.keywords, CompletionItemKind.Keyword)
+		const range = document.getWordRangeAtPosition(position);
+		const prefix = range ? document.getText(range) : '';
+		const result = this.makeProposals(prefix, this.keywords, CompletionItemKind.Keyword)
 			.concat(this.makeProposals(prefix, this.variables, CompletionItemKind.Variable));
 
 		return Promise.resolve(result);
 	}
 
 	makeProposals(prefix: string, labels:string[], kind:CompletionItemKind): CompletionItem[] {
-		var prefixLength = prefix.length
+		const prefixLength = prefix.length
 		return labels.filter((label) => {
 			return prefixLength === 0
 				|| (label.length >= prefixLength && label.substr(0, prefixLength) === prefix);
 		}).map((label) => {
-			var item = new CompletionItem(label);
+			const item = new CompletionItem(label);
 			item.kind = kind;
 			return item;
 		});
