@@ -4,7 +4,7 @@ import {CompletionItemProvider, CompletionItem, CompletionItemKind, Cancellation
 
 export class DigdagAutocomplete implements CompletionItemProvider {
 
-	private keywords = [
+	private static readonly keywords = [
 		"!include :",
 		"_background:",
 		"_check:",
@@ -64,7 +64,7 @@ export class DigdagAutocomplete implements CompletionItemProvider {
 		"skip_on_overtime:",
 	];
 
-	private variables = [
+	private static readonly variables = [
 		"timezone",
 		"session_uuid",
 		"session_id",
@@ -99,13 +99,14 @@ export class DigdagAutocomplete implements CompletionItemProvider {
 
 		const range = document.getWordRangeAtPosition(position);
 		const prefix = range ? document.getText(range) : '';
-		const result = this.makeProposals(prefix, this.keywords, CompletionItemKind.Keyword)
-			.concat(this.makeProposals(prefix, this.variables, CompletionItemKind.Variable));
+		
+		const result = DigdagAutocomplete.makeProposals(prefix, DigdagAutocomplete.keywords, CompletionItemKind.Keyword)
+			.concat(DigdagAutocomplete.makeProposals(prefix,DigdagAutocomplete.variables, CompletionItemKind.Variable));
 
 		return Promise.resolve(result);
 	}
 
-	makeProposals(prefix: string, labels: string[], kind: CompletionItemKind): CompletionItem[] {
+	private static makeProposals(prefix: string, labels: string[], kind: CompletionItemKind): CompletionItem[] {
 		const prefixLength = prefix.length
 		return labels.filter((label) => {
 			return prefixLength === 0
