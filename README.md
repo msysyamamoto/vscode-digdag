@@ -1,6 +1,6 @@
 # Digdag Support for Visual Studio Code
 
-This extension adds [Digdag](http://www.digdag.io/) support.
+This extension adds [Digdag](https://www.digdag.io/) support.
 
 ## Features
 
