@@ -40,7 +40,18 @@
                 "scopeName": "source.dig",
                 "path": "./syntaxes/digdag.json"
             }
-        ]
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "Digdag configuration",
+            "properties": {
+                "digdag.codeCompletion.enable": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable/disable code completion"
+                }
+            }
+        }
     },
     "main": "./out/src/extension",
     "scripts": {
