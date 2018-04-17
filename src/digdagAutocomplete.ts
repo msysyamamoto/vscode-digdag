@@ -1,6 +1,6 @@
 'use strict';
 
-import {CompletionItemProvider, CompletionItem, CompletionItemKind, CancellationToken, TextDocument, Position} from 'vscode';
+import {CompletionItemProvider, CompletionItem, CompletionItemKind, CancellationToken, TextDocument, Position, workspace} from 'vscode';
 
 export class DigdagAutocomplete implements CompletionItemProvider {
 
@@ -99,6 +99,11 @@ export class DigdagAutocomplete implements CompletionItemProvider {
 	]
 
     provideCompletionItems(document: TextDocument, position: Position, token: CancellationToken): Promise<CompletionItem[]> {
+
+		const conf = workspace.getConfiguration('digdag')
+		if (!conf.codeCompletion.enable) {
+			return Promise.resolve([])
+		}
 
 		const range = document.getWordRangeAtPosition(position);
 		const prefix = range ? document.getText(range) : '';
