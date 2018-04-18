@@ -4,8 +4,8 @@ This extension adds [Digdag](https://www.digdag.io/) support.
 
 ## Features
 
-* Auto complete
-* Syntax highlight
+* Syntax Highlight
+* Code Completion
 
 ![screen shot](https://raw.githubusercontent.com/msysyamamoto/vscode-digdag/master/screenshot.png)
 
