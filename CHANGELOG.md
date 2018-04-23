@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.3.0]
+### Add
+- Added operator completion.
+- Added setting to enable / disable code completion. 
+
 ## [0.2.2]
 ### Add
 - Added icon.
