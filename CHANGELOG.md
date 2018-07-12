@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.3.1]
+### Security
+- Fixed a potential security vulnerability in the dependencies.
+
 ## [0.3.0]
 ### Add
 - Added operator completion.
