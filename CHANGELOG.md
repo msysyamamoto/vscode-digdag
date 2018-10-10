@@ -1,5 +1,12 @@
 # Change Log
 
+## [0.3.2]
+### Add
+- Added keywords
+    * param_set
+    * param_set
+    * _else_do
+
 ## [0.3.1]
 ### Security
 - Fixed a potential security vulnerability in the dependencies.
