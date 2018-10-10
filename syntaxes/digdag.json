@@ -49,7 +49,7 @@
       "name": "entity.name.filename.find-in-files.dig"
     },
     {
-      "match": "_(export|parallel|background|error|do|retry|check|type|command|after)\\s*:",
+      "match": "_(export|parallel|background|error|do|else_do|retry|check|type|command|after)\\s*:",
       "name": "support.type.dig"
     },
     {
