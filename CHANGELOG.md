@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.3.3]
+### Security
+- [Event-Stream Package Security Update](https://code.visualstudio.com/blogs/2018/11/26/event-stream)
+
 ## [0.3.2]
 ### Add
 - Added keywords
