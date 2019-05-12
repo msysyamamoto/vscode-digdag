@@ -1,8 +1,12 @@
 # Change Log
 
-## [0.3.4]
+## [0.3.5]
 ### Security
 - [CVE-2018-20834](https://nvd.nist.gov/vuln/detail/CVE-2018-20834)
+
+## [0.3.4]
+### Operation mistake
+- Not exists this version.
 
 ## [0.3.3]
 ### Security
