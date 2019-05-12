@@ -2,7 +2,7 @@
     "name": "vscode-digdag",
     "displayName": "vscode-digdag",
     "description": "Digdag support for VSCode",
-    "version": "0.3.4",
+    "version": "0.3.5",
     "publisher": "msysyamamoto",
     "icon": "images/icon.png",
     "license": "SEE LICENSE IN LICENSE",
