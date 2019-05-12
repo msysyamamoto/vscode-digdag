@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.3.4]
+### Security
+- [CVE-2018-20834](https://nvd.nist.gov/vuln/detail/CVE-2018-20834)
+
 ## [0.3.3]
 ### Security
 - [Event-Stream Package Security Update](https://code.visualstudio.com/blogs/2018/11/26/event-stream)
@@ -7,7 +11,6 @@
 ## [0.3.2]
 ### Add
 - Added keywords
-    * param_set
     * param_set
     * _else_do
 
