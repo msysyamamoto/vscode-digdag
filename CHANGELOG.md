@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.3.6]
+### Add
+- Added operator
+    * http_call>
+
 ## [0.3.5]
 ### Security
 - [CVE-2018-20834](https://nvd.nist.gov/vuln/detail/CVE-2018-20834)
