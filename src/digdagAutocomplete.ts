@@ -49,6 +49,7 @@ export class DigdagAutocomplete implements CompletionItemProvider {
     "gcs_wait>:",
     "hourly>:",
     "http>:",
+    "http_call>:",
     "if>:",
     "loop>:",
     "mail>:",
