@@ -1,3 +1,5 @@
+[![Marketplace Version](https://vsmarketplacebadge.apphb.com/version/msysyamamoto.vscode-digdag.svg "Current Release")](https://marketplace.visualstudio.com/items?itemName=msysyamamoto.vscode-digdag)
+
 # Digdag Support for Visual Studio Code
 
 This extension adds [Digdag](https://www.digdag.io/) support.
