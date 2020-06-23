@@ -1,5 +1,9 @@
 # Change Log
 
+## [0.3.7]
+### Security
+- [CVE-2020-7598](https://github.com/advisories/GHSA-vh95-rmgr-6w4m)
+
 ## [0.3.6]
 ### Add
 - Added operator
