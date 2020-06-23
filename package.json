@@ -15,7 +15,7 @@
         "url": "https://github.com/msysyamamoto/vscode-digdag"
     },
     "engines": {
-        "vscode": "^1.22.0"
+        "vscode": "^1.46.0"
     },
     "categories": [
         "Programming Languages"
